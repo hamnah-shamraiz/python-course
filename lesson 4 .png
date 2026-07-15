@@ -1,0 +1,149 @@
+Lesson 4: Input and Output in Python
+What is Input and Output?
+
+In programming, we often need to take information from users and display results.
+
+Input means taking information from the user.
+
+Output means showing information on the screen.
+
+Python uses:
+
+input() → To take data from the user.
+print() → To display data on the screen.
+
+Output in Python
+
+The print() function is used to show information on the screen.
+
+Example:
+
+print("Hello, Hamnah!")
+
+Output:
+
+Hello, Hamnah!
+
+The print() function can display text, numbers, and variables.
+
+Example:
+
+name = "Hamnah"
+
+print(name)
+
+Output:
+
+Hamnah
+Input in Python
+
+The input() function is used to get information from the user.
+
+Example:
+
+name = input("Enter your name: ")
+
+print(name)
+
+Output:
+
+Enter your name: Hamnah
+
+Hamnah
+Taking Multiple Inputs
+
+We can take different types of information from users.
+
+Example:
+
+name = input("Enter your name: ")
+
+age = input("Enter your age: ")
+
+city = input("Enter your city: ")
+
+print(name)
+print(age)
+print(city)
+
+Output:
+
+Enter your name: Hamnah
+Enter your age: 14
+Enter your city: Karachi
+
+Hamnah
+14
+Karachi
+Converting Input Data Types
+
+By default, the input() function takes data as a string.
+
+If we want to use numbers, we need to convert them.
+
+Integer Input
+
+To take a number, we use:
+
+int()
+
+Example:
+
+age = int(input("Enter your age: "))
+
+print(age)
+
+Output:
+
+Enter your age: 14
+
+14
+Float Input
+
+To take decimal numbers, we use:
+
+float()
+
+Example:
+
+height = float(input("Enter your height: "))
+
+print(height)
+Simple User Information Program
+name = input("Enter your name: ")
+
+age = int(input("Enter your age: "))
+
+city = input("Enter your city: ")
+
+print("My name is", name)
+
+print("My age is", age)
+
+print("I live in", city)
+
+Output:
+
+Enter your name: Hamnah
+Enter your age: 14
+Enter your city: Karachi
+
+My name is Hamnah
+My age is 14
+I live in Karachi
+Lesson Summary
+
+In this lesson, we learned:
+
+What input and output mean
+How to use print()
+How to use input()
+How to take user information
+How to convert input into numbers using int() and float()
+Practice Task
+
+Create a program that asks the user:
+
+Name
+Age
+Favorite color
