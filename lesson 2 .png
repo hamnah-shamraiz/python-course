@@ -1,0 +1,146 @@
+Lesson 2: Installing Python and Setting Up the Environment
+What Do We Need to Start Python?
+
+To start programming in Python, we need two main things:
+
+1. Python Interpreter
+2. Code Editor
+
+Python Interpreter helps the computer understand and run Python programs.
+
+A Code Editor is a place where we write and manage our code.
+
+Installing Python
+
+To write and run Python programs, first we need to install Python on our computer.
+
+Steps to Install Python
+
+Step 1:
+Visit the official Python website.
+
+Step 2:
+Download the latest version of Python.
+
+Step 3:
+Run the installer and complete the installation process.
+
+Step 4:
+Check that Python is installed successfully.
+
+Checking Python Installation
+
+After installation, open Command Prompt or Terminal and type:
+
+python --version
+
+If Python is installed correctly, it will show the installed Python version.
+
+Example:
+
+Python 3.x.x
+Installing VS Code
+
+VS Code (Visual Studio Code) is a popular code editor used by developers to write programs.
+
+Why Use VS Code?
+
+Easy to Use
+VS Code has a simple and clean interface.
+
+Extensions Support
+It provides useful tools for programming.
+
+Professional Tool
+Many developers use VS Code for real projects.
+
+Setting Up VS Code for Python
+
+Follow these steps:
+
+Step 1:
+Install VS Code on your computer.
+
+Step 2:
+Open VS Code.
+
+Step 3:
+Install the Python Extension.
+
+Step 4:
+Create a new file with the extension:
+
+.py
+
+Example:
+
+first_program.py
+
+The .py extension tells the computer that this is a Python file.
+
+Writing Your First Python Program
+
+Create a file named:
+
+first_program.py
+
+Write:
+
+print("Hello, Python!")
+
+Output:
+
+Hello, Python!
+Understanding the First Program
+
+print() Function
+
+The print() function is used to display information on the screen.
+
+Example:
+
+print("Welcome to Python")
+
+Output:
+
+Welcome to Python
+Running a Python Program
+
+There are different ways to run Python code:
+
+Method 1: Using VS Code Run Button
+
+Click the ▶ Run button in VS Code.
+
+Method 2: Using Terminal
+
+Write:
+
+python filename.py
+
+Example:
+
+python first_program.py
+Important Tips for Beginners
+
+Practice Daily
+Programming improves with regular practice.
+
+Write Code Yourself
+Do not only copy code; try to understand it.
+
+Make Small Projects
+Projects improve your confidence and skills.
+
+Learn From Errors
+Errors are a normal part of programming.
+
+Lesson Summary
+
+In this lesson, we learned:
+
+What we need to start Python
+How to install Python
+How to set up VS Code
+How to create a Python file
+How to run our first Python program
