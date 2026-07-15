@@ -1,0 +1,171 @@
+Lesson 6: Conditional Statements (If, Else, Elif)
+What are Conditional Statements?
+
+Conditional statements are used to make decisions in a Python program.
+
+They allow the program to run different code depending on whether a condition is True or False.
+
+In real life, we also make decisions:
+
+Example:
+
+If it is raining → Take an umbrella.
+Else → Go outside normally.
+
+Python uses:
+
+if
+elif
+else
+
+for decision making.
+
+1. If Statement
+
+The if statement runs a block of code only when a condition is True.
+
+Syntax:
+
+if condition:
+    statement
+
+Example:
+
+age = 14
+
+if age >= 10:
+    print("You can learn Python.")
+
+Output:
+
+You can learn Python.
+2. If Else Statement
+
+The if else statement is used when we have two choices.
+
+If the condition is True, the if block runs.
+
+If the condition is False, the else block runs.
+
+Example:
+
+age = 14
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a teenager.")
+
+Output:
+
+You are a teenager.
+3. If Elif Else Statement
+
+The elif statement is used when we have multiple conditions.
+
+Example:
+
+marks = 85
+
+if marks >= 90:
+    print("Grade A+")
+
+elif marks >= 80:
+    print("Grade A")
+
+elif marks >= 70:
+    print("Grade B")
+
+else:
+    print("Need Improvement")
+
+Output:
+
+Grade A
+Nested If Statement
+
+A nested if statement means using an if statement inside another if statement.
+
+Example:
+
+age = 14
+
+if age >= 10:
+    print("You can join the course.")
+
+    if age == 14:
+        print("Your age is 14.")
+
+Output:
+
+You can join the course.
+Your age is 14.
+Comparison Operators with Conditions
+
+Conditions often use comparison operators:
+
+Equal To (==)
+
+name = "Hamnah"
+
+if name == "Hamnah":
+    print("Welcome Hamnah!")
+
+Output:
+
+Welcome Hamnah!
+
+Greater Than (>)
+
+age = 14
+
+if age > 10:
+    print("Age is greater than 10.")
+
+Output:
+
+Age is greater than 10.
+Real-Life Example: Login System
+username = "Hamnah"
+password = "1234"
+
+if username == "Hamnah" and password == "1234":
+    print("Login Successful")
+else:
+    print("Incorrect Details")
+
+Output:
+
+Login Successful
+Practice Example
+
+Create a program that checks a person's age.
+
+age = 14
+
+if age >= 18:
+    print("You can vote.")
+
+else:
+    print("You cannot vote yet.")
+
+Output:
+
+You cannot vote yet.
+Lesson Summary
+
+In this lesson, we learned:
+
+What conditional statements are
+How to use if statement
+How to use if else statement
+How to use elif
+How to make decisions in Python programs
+Practice Task
+
+Create a program that takes marks from the user and displays:
+
+90 or above → Grade A+
+80 or above → Grade A
+70 or above → Grade B
+Below 70 → Need Improvement
