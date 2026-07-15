@@ -1,0 +1,250 @@
+Lesson 8: Lists and Dictionaries in Python
+What are Data Collections?
+
+Sometimes we need to store multiple values together in one place.
+
+Python provides different ways to store collections of data.
+
+Two important data collections are:
+
+1. Lists
+2. Dictionaries
+
+1. Lists in Python
+What is a List?
+
+A list is used to store multiple values in a single variable.
+
+Lists are written using square brackets [ ].
+
+Example:
+
+fruits = ["Apple", "Mango", "Banana"]
+
+print(fruits)
+
+Output:
+
+['Apple', 'Mango', 'Banana']
+Accessing List Items
+
+Each item in a list has an index number.
+
+Index starts from 0.
+
+Example:
+
+colors = ["Pink", "Blue", "Black"]
+
+print(colors[0])
+
+Output:
+
+Pink
+Changing List Values
+
+We can change values inside a list.
+
+Example:
+
+colors = ["Pink", "Blue", "Black"]
+
+colors[1] = "Green"
+
+print(colors)
+
+Output:
+
+['Pink', 'Green', 'Black']
+Adding Items to a List
+
+We use the append() method to add a new item.
+
+Example:
+
+subjects = ["Python", "Math"]
+
+subjects.append("English")
+
+print(subjects)
+
+Output:
+
+['Python', 'Math', 'English']
+Removing Items from a List
+
+We use the remove() method.
+
+Example:
+
+fruits = ["Apple", "Mango", "Banana"]
+
+fruits.remove("Mango")
+
+print(fruits)
+
+Output:
+
+['Apple', 'Banana']
+Loop Through a List
+
+We can use loops with lists.
+
+Example:
+
+names = ["Hamnah", "Ali", "Sara"]
+
+for name in names:
+    print(name)
+
+Output:
+
+Hamnah
+Ali
+Sara
+2. Dictionaries in Python
+What is a Dictionary?
+
+A dictionary stores data in key-value pairs.
+
+Dictionaries are written using curly brackets { }.
+
+Example:
+
+student = {
+    "name": "Hamnah",
+    "age": 14,
+    "city": "Karachi"
+}
+
+print(student)
+
+Output:
+
+{'name': 'Hamnah', 'age': 14, 'city': 'Karachi'}
+Accessing Dictionary Values
+
+We can access values using their keys.
+
+Example:
+
+student = {
+    "name": "Hamnah",
+    "age": 14
+}
+
+print(student["name"])
+
+Output:
+
+Hamnah
+Changing Dictionary Values
+
+Example:
+
+student = {
+    "name": "Hamnah",
+    "age": 14
+}
+
+student["age"] = 15
+
+print(student)
+
+Output:
+
+{'name': 'Hamnah', 'age': 15}
+Adding New Items in Dictionary
+
+Example:
+
+student = {
+    "name": "Hamnah",
+    "age": 14
+}
+
+student["city"] = "Karachi"
+
+print(student)
+
+Output:
+
+{'name': 'Hamnah', 'age': 14, 'city': 'Karachi'}
+Dictionary Loop
+
+We can loop through dictionary items.
+
+Example:
+
+student = {
+    "name": "Hamnah",
+    "age": 14,
+    "city": "Karachi"
+}
+
+for key, value in student.items():
+    print(key, value)
+
+Output:
+
+name Hamnah
+age 14
+city Karachi
+Difference Between List and Dictionary
+
+List:
+
+Stores multiple values
+Uses index numbers
+Written with [ ]
+
+Example:
+
+names = ["Hamnah", "Ali"]
+
+Dictionary:
+
+Stores data as key-value pairs
+Uses keys instead of indexes
+Written with { }
+
+Example:
+
+student = {"name": "Hamnah"}
+Practice Example
+
+Create a list of your favorite colors:
+
+colors = ["Pink", "Blue", "Black"]
+
+for color in colors:
+    print(color)
+
+Create a dictionary about yourself:
+
+person = {
+    "name": "Hamnah",
+    "age": 14,
+    "city": "Karachi"
+}
+
+print(person)
+Lesson Summary
+
+In this lesson, we learned:
+
+What lists are
+How to create and modify lists
+How to use list methods
+What dictionaries are
+How to store data using key-value pairs
+How to loop through lists and dictionaries
+Practice Task
+
+Create a program that stores:
+
+Your favorite foods in a list
+
+and
+
+Your personal information in a dictionary.
