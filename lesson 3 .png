@@ -1,0 +1,165 @@
+Lesson 3: Variables and Data Types
+What are Variables?
+
+Variables are used to store information or data in a Python program.
+
+A variable is like a container that stores a value. We can store different types of information such as names, numbers, and text.
+
+Example:
+
+name = "Hamnah"
+
+Here, the variable name stores the value Hamnah.
+
+Creating Variables in Python
+
+In Python, we do not need to declare the type of a variable. Python automatically understands the type of data.
+
+Example:
+
+name = "Hamnah"
+age = 14
+city = "Karachi"
+
+In this example:
+
+name stores text
+age stores a number
+city stores text
+Rules for Naming Variables
+
+When creating variables, we should follow these rules:
+
+1. Variable names can contain letters, numbers, and underscores.
+
+Example:
+
+student_name
+age1
+
+2. Variable names cannot start with a number.
+
+Wrong:
+
+1name
+
+Correct:
+
+name1
+
+3. Variable names cannot contain spaces.
+
+Wrong:
+
+student name
+
+Correct:
+
+student_name
+
+4. Variable names are case-sensitive.
+
+Example:
+
+Name
+name
+
+Both are different variables.
+
+Types of Data in Python
+
+Python has different types of data. These are called data types.
+
+1. String (str)
+
+A string is used to store text.
+
+Example:
+
+name = "Hamnah"
+
+Strings are written inside quotation marks.
+
+2. Integer (int)
+
+Integer stores whole numbers.
+
+Example:
+
+age = 14
+3. Float (float)
+
+Float stores decimal numbers.
+
+Example:
+
+height = 5.5
+4. Boolean (bool)
+
+Boolean stores only two values:
+
+True
+False
+
+Example:
+
+is_student = True
+Checking Data Type
+
+We can check the type of data using the type() function.
+
+Example:
+
+age = 14
+
+print(type(age))
+
+Output:
+
+int
+Multiple Variables
+
+Python allows us to create multiple variables in one line.
+
+Example:
+
+name, age, city = "Hamnah", 14, "Karachi"
+
+print(name)
+print(age)
+print(city)
+
+Output:
+
+Hamnah
+14
+Karachi
+Practice Example
+
+Create variables for your personal information:
+
+name = "Hamnah"
+
+age = 14
+
+city = "Karachi"
+
+print(name)
+print(age)
+print(city)
+
+Output:
+
+Hamnah
+14
+Karachi
+Lesson Summary
+
+In this lesson, we learned:
+
+What variables are
+How to create variables
+Rules for naming variables
+Different Python data types
+How to check data types
+How to store multiple values
