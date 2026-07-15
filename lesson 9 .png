@@ -1,0 +1,196 @@
+Lesson 9: Functions in Python
+What are Functions?
+
+A function is a block of code that performs a specific task.
+
+Functions help us:
+
+Reduce repeated code
+Make programs easier to understand
+Organize code properly
+
+Instead of writing the same code many times, we can create a function and use it whenever needed.
+
+Creating a Function
+
+In Python, we create a function using the keyword:
+
+def
+
+Syntax:
+
+def function_name():
+    statement
+
+Example:
+
+def hello():
+    print("Hello, Python!")
+
+hello()
+
+Output:
+
+Hello, Python!
+Calling a Function
+
+Creating a function does not run the code.
+
+We need to call the function to execute it.
+
+Example:
+
+def welcome():
+    print("Welcome to Python")
+
+welcome()
+
+Output:
+
+Welcome to Python
+Functions with Parameters
+
+Parameters allow us to pass information into a function.
+
+Example:
+
+def greet(name):
+    print("Hello", name)
+
+greet("Hamnah")
+
+Output:
+
+Hello Hamnah
+
+Here, name is a parameter.
+
+Multiple Parameters
+
+A function can have more than one parameter.
+
+Example:
+
+def information(name, age, city):
+    print("Name:", name)
+    print("Age:", age)
+    print("City:", city)
+
+information("Hamnah", 14, "Karachi")
+
+Output:
+
+Name: Hamnah
+Age: 14
+City: Karachi
+Return Statement
+
+The return statement sends a value back from a function.
+
+Example:
+
+def add(a, b):
+    return a + b
+
+result = add(10, 5)
+
+print(result)
+
+Output:
+
+15
+Function with User Input
+
+Example:
+
+def introduction():
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+
+    print("My name is", name)
+    print("My age is", age)
+
+introduction()
+
+Output:
+
+Enter your name: Hamnah
+Enter your age: 14
+
+My name is Hamnah
+My age is 14
+Types of Functions
+
+Python functions are mainly two types:
+
+1. Built-in Functions
+
+These functions are already available in Python.
+
+Examples:
+
+print()
+input()
+type()
+len()
+2. User-defined Functions
+
+Functions created by programmers are called user-defined functions.
+
+Example:
+
+def my_function():
+    print("This is my function")
+
+my_function()
+Advantages of Functions
+
+Code Reusability
+We can use the same function many times.
+
+Easy Debugging
+Functions make finding errors easier.
+
+Better Organization
+Programs become cleaner and easier to understand.
+
+Practice Example
+
+Create a function that displays your information:
+
+def my_info():
+    print("Name: Hamnah")
+    print("Age: 14")
+    print("City: Karachi")
+
+my_info()
+
+Output:
+
+Name: Hamnah
+Age: 14
+City: Karachi
+Lesson Summary
+
+In this lesson, we learned:
+
+What functions are
+How to create functions
+How to call functions
+Parameters and arguments
+Return statements
+Types of functions
+Practice Task
+
+Create a function that takes two numbers from the user and returns their sum.
+
+Example:
+
+Input:
+
+Enter first number: 10
+Enter second number: 5
+
+Output:
+
+Sum = 15
