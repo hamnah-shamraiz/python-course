@@ -1,0 +1,231 @@
+Lesson 5: Operators in Python
+What are Operators?
+
+Operators are special symbols or words that are used to perform different operations on values and variables.
+
+For example, operators can be used for:
+
+Mathematical calculations
+Comparing values
+Checking conditions
+Combining logical statements
+Types of Operators in Python
+
+Python has different types of operators:
+
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+Logical Operators
+1. Arithmetic Operators
+
+Arithmetic operators are used to perform mathematical calculations.
+
+Addition (+)
+
+Adds two values.
+
+Example:
+
+a = 10
+b = 5
+
+print(a + b)
+
+Output:
+
+15
+Subtraction (-)
+
+Subtracts one value from another.
+
+Example:
+
+a = 10
+b = 5
+
+print(a - b)
+
+Output:
+
+5
+Multiplication (*)
+
+Multiplies two values.
+
+Example:
+
+a = 10
+b = 5
+
+print(a * b)
+
+Output:
+
+50
+Division (/)
+
+Divides one value by another.
+
+Example:
+
+a = 10
+b = 5
+
+print(a / b)
+
+Output:
+
+2.0
+Modulus (%)
+
+Returns the remainder after division.
+
+Example:
+
+a = 10
+b = 3
+
+print(a % b)
+
+Output:
+
+1
+2. Assignment Operators
+
+Assignment operators are used to assign values to variables.
+
+Example:
+
+name = "Hamnah"
+
+age = 14
+
+Here, = assigns values to variables.
+
+3. Comparison Operators
+
+Comparison operators compare two values and return:
+
+True or False
+
+Equal To (==)
+
+Checks if two values are equal.
+
+Example:
+
+age = 14
+
+print(age == 14)
+
+Output:
+
+True
+Not Equal To (!=)
+
+Checks if two values are different.
+
+Example:
+
+print(10 != 5)
+
+Output:
+
+True
+Greater Than (>)
+
+Example:
+
+print(10 > 5)
+
+Output:
+
+True
+Less Than (<)
+
+Example:
+
+print(5 < 10)
+
+Output:
+
+True
+4. Logical Operators
+
+Logical operators are used to combine conditions.
+
+AND
+
+Returns True when both conditions are True.
+
+Example:
+
+age = 14
+
+print(age > 10 and age < 20)
+
+Output:
+
+True
+OR
+
+Returns True when at least one condition is True.
+
+Example:
+
+print(10 > 5 or 10 < 2)
+
+Output:
+
+True
+NOT
+
+Reverses the result.
+
+Example:
+
+print(not True)
+
+Output:
+
+False
+Practice Example
+
+Create a simple calculator using operators:
+
+a = 10
+b = 5
+
+print("Addition:", a + b)
+
+print("Subtraction:", a - b)
+
+print("Multiplication:", a * b)
+
+print("Division:", a / b)
+
+Output:
+
+Addition: 15
+Subtraction: 5
+Multiplication: 50
+Division: 2.0
+Lesson Summary
+
+In this lesson, we learned:
+
+What operators are
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+How to perform calculations in Python
+Practice Task
+
+Create a program that takes two numbers from the user and displays:
+
+Addition
+Subtraction
+Multiplication
+Division
