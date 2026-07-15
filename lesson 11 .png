@@ -1,0 +1,176 @@
+Lesson 11: File Handling in Python
+What is File Handling?
+
+File handling allows us to create, read, write, and manage files using Python.
+
+Files are used to store data permanently. The data remains saved even after the program is closed.
+
+Examples of files:
+
+Text files (.txt)
+Images
+CSV files
+Data files
+
+Python provides built-in functions to work with files.
+
+Opening a File
+
+To work with a file, first we need to open it.
+
+Python uses the open() function.
+
+Syntax:
+
+file = open("filename", "mode")
+
+Example:
+
+file = open("data.txt", "r")
+
+Here:
+
+data.txt → File name
+r → Reading mode
+
+File Opening Modes
+
+Python has different file modes:
+
+1. Read Mode (r)
+
+Used to read data from a file.
+
+Example:
+
+file = open("data.txt", "r")
+2. Write Mode (w)
+
+Used to write data into a file.
+
+It creates a new file if the file does not exist.
+
+Example:
+
+file = open("data.txt", "w")
+3. Append Mode (a)
+
+Used to add new data at the end of an existing file.
+
+Example:
+
+file = open("data.txt", "a")
+Writing Data into a File
+
+We use the write() function to add data.
+
+Example:
+
+file = open("student.txt", "w")
+
+file.write("My name is Hamnah.")
+file.write("I am learning Python.")
+
+file.close()
+
+The close() function closes the file after completing the work.
+
+Reading Data from a File
+
+We use the read() function to read data.
+
+Example:
+
+file = open("student.txt", "r")
+
+data = file.read()
+
+print(data)
+
+file.close()
+
+Output:
+
+My name is Hamnah.
+I am learning Python.
+Using With Statement
+
+The with statement automatically closes the file after use.
+
+Example:
+
+with open("student.txt", "r") as file:
+    data = file.read()
+
+    print(data)
+
+This method is safer and commonly used by programmers.
+
+Reading Lines from a File
+
+We can read files line by line.
+
+Example:
+
+with open("student.txt", "r") as file:
+
+    for line in file:
+        print(line)
+Adding New Data to a File
+
+Using append mode:
+
+with open("student.txt", "a") as file:
+
+    file.write("\nI love programming.")
+
+Output in file:
+
+My name is Hamnah.
+I am learning Python.
+I love programming.
+Creating a Simple Notes Program
+note = input("Write your note: ")
+
+with open("notes.txt", "w") as file:
+    file.write(note)
+
+print("Note saved successfully!")
+
+Output:
+
+Write your note: Learn Python
+
+Note saved successfully!
+Advantages of File Handling
+
+Permanent Storage
+Data remains saved after the program closes.
+
+Easy Data Management
+We can store and organize information.
+
+Useful for Projects
+Files are used in real-world applications.
+
+Lesson Summary
+
+In this lesson, we learned:
+
+What file handling is
+How to open files
+Different file modes
+Reading files
+Writing files
+Appending data
+Using the with statement
+Practice Task
+
+Create a program that:
+
+Creates a file named about_me.txt
+Stores your information:
+Name: Hamnah
+Age: 14
+City: Karachi
+Reads the file and displays the information.
