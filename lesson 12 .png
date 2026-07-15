@@ -1,0 +1,193 @@
+Lesson 12: Error Handling in Python
+What is Error Handling?
+
+Errors are problems that occur while running a program.
+
+Sometimes a program can stop because of mistakes or unexpected situations.
+
+Error handling helps us manage these problems and keeps our program running smoothly.
+
+Python uses:
+
+try
+except
+finally
+
+to handle errors.
+
+Why Do We Need Error Handling?
+
+Without error handling, a program may crash.
+
+Example:
+
+number = 10
+
+print(number / 0)
+
+Output:
+
+ZeroDivisionError
+
+The program stops because we cannot divide a number by zero.
+
+Try and Except
+
+The try block contains code that may cause an error.
+
+The except block handles the error.
+
+Syntax:
+
+try:
+    code
+
+except:
+    code
+
+Example:
+
+try:
+    number = 10 / 0
+
+except:
+    print("Something went wrong!")
+
+Output:
+
+Something went wrong!
+Handling Specific Errors
+
+We can handle specific types of errors.
+
+Example:
+
+try:
+    age = int(input("Enter your age: "))
+
+    print(age)
+
+except ValueError:
+    print("Please enter a number.")
+
+Output:
+
+Enter your age: abc
+
+Please enter a number.
+Multiple Except Blocks
+
+A program can have more than one error type.
+
+Example:
+
+try:
+    a = 10
+    b = 0
+
+    print(a / b)
+
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+
+except ValueError:
+    print("Invalid value.")
+
+Output:
+
+Cannot divide by zero.
+Using Finally
+
+The finally block always runs, whether an error occurs or not.
+
+Example:
+
+try:
+    print("Hello Python")
+
+except:
+    print("Error occurred")
+
+finally:
+    print("Program finished")
+
+Output:
+
+Hello Python
+Program finished
+Real-Life Example: Login System
+try:
+
+    password = input("Enter password: ")
+
+    if password == "1234":
+        print("Login Successful")
+
+    else:
+        print("Wrong Password")
+
+except:
+    print("An error occurred")
+
+Output:
+
+Enter password: 1234
+
+Login Successful
+Creating Your Own Error Message
+
+We can use raise to create a custom error.
+
+Example:
+
+age = -1
+
+if age < 0:
+    raise ValueError("Age cannot be negative")
+
+Output:
+
+ValueError: Age cannot be negative
+Advantages of Error Handling
+
+Prevents Program Crashes
+Programs can continue running even when errors happen.
+
+Better User Experience
+Users get helpful messages instead of confusing errors.
+
+Easier Debugging
+Developers can find and fix problems easily.
+
+Practice Example
+
+Create a program that takes two numbers from the user and divides them.
+
+The program should handle:
+
+If the user enters text instead of a number
+If the user tries to divide by zero
+
+Example:
+
+try:
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+
+    print(a / b)
+
+except ValueError:
+    print("Please enter numbers only.")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+Lesson Summary
+
+In this lesson, we learned:
+
+What errors are
+Why error handling is important
+try and except blocks
+Handling specific errors
+finally block
+raise statement
