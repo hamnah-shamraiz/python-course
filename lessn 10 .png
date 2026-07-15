@@ -1,0 +1,216 @@
+Lesson 10: Object-Oriented Programming (OOP) in Python
+What is Object-Oriented Programming?
+
+Object-Oriented Programming (OOP) is a programming style that uses objects and classes to organize code.
+
+OOP helps us create programs that are:
+
+Easy to understand
+Easy to manage
+Reusable
+
+Many real-world things can be represented as objects.
+
+Examples:
+
+Student
+
+Name
+Age
+Class
+
+Car
+
+Color
+Model
+Speed
+What is a Class?
+
+A class is a blueprint or template used to create objects.
+
+A class defines the properties and behaviors of an object.
+
+Example:
+
+class Student:
+    name = "Hamnah"
+    age = 14
+
+Here, Student is a class.
+
+What is an Object?
+
+An object is an instance of a class.
+
+Objects use the information and functions created inside a class.
+
+Example:
+
+class Student:
+    name = "Hamnah"
+    age = 14
+
+student1 = Student()
+
+print(student1.name)
+print(student1.age)
+
+Output:
+
+Hamnah
+14
+The init() Function
+
+The __init__() function is a special function that runs automatically when an object is created.
+
+It is used to assign values to objects.
+
+Example:
+
+class Student:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+student1 = Student("Hamnah", 14)
+
+print(student1.name)
+print(student1.age)
+
+Output:
+
+Hamnah
+14
+Understanding self
+
+The self keyword refers to the current object.
+
+It is used to access variables and functions inside a class.
+
+Example:
+
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+Here:
+
+self.name belongs to the object.
+name is the value passed to the object.
+Creating Methods in Classes
+
+A method is a function that is created inside a class.
+
+Example:
+
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):
+        print("Student Name:", self.name)
+
+
+student1 = Student("Hamnah")
+
+student1.show_name()
+
+Output:
+
+Student Name: Hamnah
+Inheritance in Python
+
+Inheritance allows one class to use the properties and methods of another class.
+
+It helps reuse code.
+
+Example:
+
+class Person:
+
+    def speak(self):
+        print("I can speak")
+
+
+class Student(Person):
+
+    def study(self):
+        print("I can study")
+
+
+student = Student()
+
+student.speak()
+student.study()
+
+Output:
+
+I can speak
+I can study
+Real-Life Example of OOP
+
+Creating a Student Class:
+
+class Student:
+
+    def __init__(self, name, age, city):
+        self.name = name
+        self.age = age
+        self.city = city
+
+
+student1 = Student("Hamnah", 14, "Karachi")
+
+print(student1.name)
+print(student1.age)
+print(student1.city)
+
+Output:
+
+Hamnah
+14
+Karachi
+Advantages of OOP
+
+Code Reusability
+We can reuse existing code.
+
+Better Organization
+Large programs become easier to manage.
+
+Security
+Data can be controlled inside objects.
+
+Easy Maintenance
+Updating code becomes easier.
+
+Lesson Summary
+
+In this lesson, we learned:
+
+What OOP is
+What classes are
+What objects are
+How to create classes and objects
+The use of __init__() function
+The purpose of self
+Inheritance in Python
+Practice Task
+
+Create a class named Book with:
+
+Book name
+Author name
+Price
+
+Create an object and display all information.
+
+Example:
+
+Book Name: Python Basics
+Author: Hamnah
+Price: 500
