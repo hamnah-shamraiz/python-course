@@ -1,0 +1,225 @@
+# Python Course - Lesson 13: Lists in Python 🐍
+
+## What is a List?
+
+A list is a collection of multiple values stored in a single variable.
+
+Lists allow us to store multiple items together and perform different operations on them.
+
+A list can store:
+- Strings
+- Numbers
+- Boolean values
+- Different data types
+
+Example:
+
+```python
+students = ["Ali", "Ahmed", "Sara"]
+
+print(students)
+
+Output:
+
+['Ali', 'Ahmed', 'Sara']
+Creating a List
+
+Lists are created using square brackets [].
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits)
+
+Output:
+
+['Apple', 'Banana', 'Mango']
+Accessing List Items
+
+Each item in a list has an index number.
+
+The index starts from 0.
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits[0])
+print(fruits[1])
+
+Output:
+
+Apple
+Banana
+Negative Indexing
+
+Python also supports negative indexing.
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits[-1])
+
+Output:
+
+Mango
+
+-1 represents the last item in the list.
+
+Changing List Items
+
+We can change any item in a list by using its index.
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+fruits[1] = "Orange"
+
+print(fruits)
+
+Output:
+
+['Apple', 'Orange', 'Mango']
+Adding Items to a List
+append()
+
+The append() method adds a new item at the end of the list.
+
+Example:
+
+fruits = ["Apple", "Banana"]
+
+fruits.append("Mango")
+
+print(fruits)
+
+Output:
+
+['Apple', 'Banana', 'Mango']
+insert()
+
+The insert() method adds an item at a specific position.
+
+Example:
+
+fruits = ["Apple", "Banana"]
+
+fruits.insert(1, "Mango")
+
+print(fruits)
+
+Output:
+
+['Apple', 'Mango', 'Banana']
+Removing Items from a List
+remove()
+
+The remove() method removes a specific item from the list.
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+fruits.remove("Banana")
+
+print(fruits)
+
+Output:
+
+['Apple', 'Mango']
+pop()
+
+The pop() method removes an item using its index.
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+fruits.pop(1)
+
+print(fruits)
+
+Output:
+
+['Apple', 'Mango']
+Finding List Length
+
+The len() function is used to find the number of items in a list.
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print(len(fruits))
+
+Output:
+
+3
+Looping Through a List
+
+We can use a for loop to print all items of a list.
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+for fruit in fruits:
+    print(fruit)
+
+Output:
+
+Apple
+Banana
+Mango
+Checking Items in a List
+
+The in keyword checks whether an item exists in a list.
+
+Example:
+
+fruits = ["Apple", "Banana", "Mango"]
+
+if "Apple" in fruits:
+    print("Apple is available")
+
+Output:
+
+Apple is available
+Practice Example
+
+Create a program that:
+
+Creates a list of student names
+Prints all students
+Adds a new student
+Removes a student
+Finds the total number of students
+
+Example:
+
+students = ["Ali", "Ahmed", "Sara"]
+
+students.append("John")
+
+students.remove("Ahmed")
+
+print(students)
+
+print(len(students))
+Lesson Summary
+
+In this lesson, we learned:
+
+What lists are
+How to create lists
+Accessing list items
+Negative indexing
+Changing list values
+Adding items using append() and insert()
+Removing items using remove() and pop()
+Finding list length
+Looping through lists
+Checking items in a list
