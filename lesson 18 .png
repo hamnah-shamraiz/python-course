@@ -1,0 +1,170 @@
+# Python Course - Lesson 18: Lambda Functions in Python 🐍
+
+## What is a Lambda Function?
+
+A lambda function is a small anonymous function in Python.
+
+Unlike normal functions, lambda functions do not have a name and are written in a single line.
+
+Lambda functions are useful when we need a simple function for a short period of time.
+
+---
+
+## Normal Function vs Lambda Function
+
+### Normal Function:
+
+```python
+def add(a, b):
+    return a + b
+
+print(add(5, 3))
+
+Output:
+
+8
+Lambda Function:
+add = lambda a, b: a + b
+
+print(add(5, 3))
+
+Output:
+
+8
+Syntax of Lambda Function
+Syntax:
+lambda arguments: expression
+
+Example:
+
+square = lambda x: x * x
+
+print(square(5))
+
+Output:
+
+25
+Lambda Function with Multiple Arguments
+
+A lambda function can have multiple arguments.
+
+Example:
+
+multiply = lambda a, b: a * b
+
+print(multiply(4, 5))
+
+Output:
+
+20
+Lambda Function with If-Else
+
+Lambda functions can also use conditional expressions.
+
+Example:
+
+check = lambda age: "Adult" if age >= 18 else "Minor"
+
+print(check(20))
+
+Output:
+
+Adult
+Using Lambda with map()
+
+The map() function applies a function to every item in a list.
+
+Example:
+
+numbers = [1, 2, 3, 4, 5]
+
+square = list(map(lambda x: x * x, numbers))
+
+print(square)
+
+Output:
+
+[1, 4, 9, 16, 25]
+Using Lambda with filter()
+
+The filter() function is used to filter items from a list based on a condition.
+
+Example:
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+even = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(even)
+
+Output:
+
+[2, 4, 6]
+Using Lambda with sorted()
+
+Lambda functions can be used to customize sorting.
+
+Example:
+
+students = [
+    ("Ali", 20),
+    ("Ahmed", 18),
+    ("Sara", 22)
+]
+
+students.sort(key=lambda x: x[1])
+
+print(students)
+
+Output:
+
+[('Ahmed', 18), ('Ali', 20), ('Sara', 22)]
+Lambda Function with Strings
+
+Example:
+
+name = lambda x: x.upper()
+
+print(name("python"))
+
+Output:
+
+PYTHON
+Advantages of Lambda Functions
+Short and simple syntax
+Useful for small operations
+Reduces unnecessary function definitions
+Commonly used with map(), filter(), and sorted()
+Limitations of Lambda Functions
+Lambda functions can only contain one expression
+They are not suitable for large or complex logic
+They can become difficult to read if overused
+Practice Example
+
+Create a lambda function that:
+
+Takes two numbers
+Returns the larger number
+
+Example:
+
+maximum = lambda a, b: a if a > b else b
+
+print(maximum(10, 5))
+
+Output:
+
+10
+Lesson Summary
+
+In this lesson, we learned:
+
+What lambda functions are
+Lambda function syntax
+Lambda with multiple arguments
+Lambda with if-else
+Using lambda with:
+map()
+filter()
+sorted()
+Advantages and limitations of lambda functions
