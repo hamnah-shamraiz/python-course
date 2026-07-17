@@ -1,0 +1,245 @@
+# Python Course - Lesson 15: Sets in Python 🐍
+
+## What is a Set?
+
+A set is a collection of unique values stored in a single variable.
+
+Sets are:
+- Unordered
+- Changeable
+- Do not allow duplicate values
+
+Sets are created using curly brackets `{}`.
+
+Example:
+
+```python
+fruits = {"Apple", "Banana", "Mango"}
+
+print(fruits)
+
+Output:
+
+{'Apple', 'Banana', 'Mango'}
+
+Note:
+The order of items in a set can be different because sets are unordered.
+
+Creating a Set
+
+Example:
+
+numbers = {1, 2, 3, 4, 5}
+
+print(numbers)
+
+Output:
+
+{1, 2, 3, 4, 5}
+Duplicate Values in Sets
+
+Sets automatically remove duplicate values.
+
+Example:
+
+numbers = {1, 2, 2, 3, 4, 4}
+
+print(numbers)
+
+Output:
+
+{1, 2, 3, 4}
+Accessing Set Items
+
+Sets do not have indexes, so we cannot access items using index numbers.
+
+Example:
+
+fruits = {"Apple", "Banana", "Mango"}
+
+for fruit in fruits:
+    print(fruit)
+
+Output:
+
+Apple
+Banana
+Mango
+
+(The order may be different.)
+
+Adding Items to a Set
+add()
+
+The add() method is used to add a new item to a set.
+
+Example:
+
+fruits = {"Apple", "Banana"}
+
+fruits.add("Mango")
+
+print(fruits)
+
+Output:
+
+{'Apple', 'Banana', 'Mango'}
+Adding Multiple Items
+update()
+
+The update() method adds items from another collection.
+
+Example:
+
+fruits = {"Apple", "Banana"}
+
+fruits.update(["Mango", "Orange"])
+
+print(fruits)
+
+Output:
+
+{'Apple', 'Banana', 'Mango', 'Orange'}
+Removing Items from a Set
+remove()
+
+The remove() method removes a specific item.
+
+Example:
+
+fruits = {"Apple", "Banana", "Mango"}
+
+fruits.remove("Banana")
+
+print(fruits)
+
+Output:
+
+{'Apple', 'Mango'}
+discard()
+
+The discard() method also removes an item, but it does not show an error if the item does not exist.
+
+Example:
+
+fruits = {"Apple", "Banana"}
+
+fruits.discard("Orange")
+
+print(fruits)
+
+Output:
+
+{'Apple', 'Banana'}
+Using pop()
+
+The pop() method removes a random item from the set.
+
+Example:
+
+fruits = {"Apple", "Banana", "Mango"}
+
+fruits.pop()
+
+print(fruits)
+
+Output:
+
+{'Banana', 'Mango'}
+Finding Set Length
+
+The len() function returns the number of items in a set.
+
+Example:
+
+fruits = {"Apple", "Banana", "Mango"}
+
+print(len(fruits))
+
+Output:
+
+3
+Set Operations
+
+Sets support mathematical operations like union and intersection.
+
+Union of Sets
+
+The union combines all items from two sets.
+
+Example:
+
+set1 = {1, 2, 3}
+
+set2 = {3, 4, 5}
+
+result = set1.union(set2)
+
+print(result)
+
+Output:
+
+{1, 2, 3, 4, 5}
+Intersection of Sets
+
+The intersection returns common items from two sets.
+
+Example:
+
+set1 = {1, 2, 3}
+
+set2 = {3, 4, 5}
+
+result = set1.intersection(set2)
+
+print(result)
+
+Output:
+
+{3}
+Difference Between List, Tuple, and Set
+List	Tuple	Set
+Uses []	Uses ()	Uses {}
+Ordered	Ordered	Unordered
+Allows duplicates	Allows duplicates	No duplicates
+Changeable	Unchangeable	Changeable
+Practice Example
+
+Create a program that:
+
+Creates a set of student names
+Adds a new student
+Removes a student
+Checks if a student exists
+
+Example:
+
+students = {"Ali", "Ahmed", "Sara"}
+
+students.add("John")
+
+students.remove("Ahmed")
+
+if "Ali" in students:
+    print("Student found")
+
+print(students)
+Lesson Summary
+
+In this lesson, we learned:
+
+What sets are
+How to create sets
+Sets do not allow duplicates
+Adding items using:
+add()
+update()
+Removing items using:
+remove()
+discard()
+pop()
+Finding set length
+Set operations:
+Union
+Intersection
+Difference between List, Tuple, and Set
