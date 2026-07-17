@@ -1,0 +1,250 @@
+# Python Course - Lesson 19: Object-Oriented Programming (OOP) in Python 🐍
+
+## What is Object-Oriented Programming?
+
+Object-Oriented Programming (OOP) is a programming style that uses **objects and classes** to organize code.
+
+OOP helps developers create reusable and structured programs.
+
+Python supports OOP concepts like:
+
+- Classes
+- Objects
+- Attributes
+- Methods
+- Inheritance
+- Encapsulation
+- Polymorphism
+
+---
+
+## What is a Class?
+
+A class is a blueprint or template used to create objects.
+
+A class defines:
+- Data (attributes)
+- Functions (methods)
+
+Example:
+
+```python
+class Student:
+    name = "Ali"
+    age = 20
+What is an Object?
+
+An object is an instance of a class.
+
+We create objects from classes to access their data and methods.
+
+Example:
+
+class Student:
+    name = "Ali"
+    age = 20
+
+student1 = Student()
+
+print(student1.name)
+print(student1.age)
+
+Output:
+
+Ali
+20
+Creating a Class
+
+We create a class using the class keyword.
+
+Example:
+
+class Car:
+    brand = "Toyota"
+    color = "Black"
+
+car1 = Car()
+
+print(car1.brand)
+print(car1.color)
+
+Output:
+
+Toyota
+Black
+The init() Method
+
+The __init__() method is a special method that runs automatically when an object is created.
+
+It is used to initialize object values.
+
+Example:
+
+class Student:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+student1 = Student("Ali", 20)
+
+print(student1.name)
+print(student1.age)
+
+Output:
+
+Ali
+20
+Understanding self
+
+The self keyword refers to the current object.
+
+It allows us to access object variables and methods.
+
+Example:
+
+class Person:
+
+    def show(self):
+        print("Hello")
+
+person1 = Person()
+
+person1.show()
+
+Output:
+
+Hello
+Creating Methods in a Class
+
+Methods are functions created inside a class.
+
+Example:
+
+class Student:
+
+    def study(self):
+        print("Student is studying")
+
+student1 = Student()
+
+student1.study()
+
+Output:
+
+Student is studying
+Class Variables and Object Variables
+Class Variable
+
+A variable shared by all objects.
+
+Example:
+
+class Student:
+
+    school = "ABC School"
+
+student1 = Student()
+
+print(student1.school)
+
+Output:
+
+ABC School
+Object Variable
+
+A variable that belongs to a specific object.
+
+Example:
+
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+student1 = Student("Ali")
+
+print(student1.name)
+
+Output:
+
+Ali
+Real-Life Example: Bank Account
+
+Example:
+
+class BankAccount:
+
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def show_balance(self):
+        print("Balance:", self.balance)
+
+
+account1 = BankAccount("Ali", 5000)
+
+account1.show_balance()
+
+Output:
+
+Balance: 5000
+Advantages of OOP
+Code Reusability
+
+We can reuse classes and objects in different programs.
+
+Better Organization
+
+Large programs become easier to manage.
+
+Security
+
+Data can be protected using encapsulation.
+
+Easy Maintenance
+
+Updating code becomes easier.
+
+Practice Example
+
+Create a class called Student.
+
+Requirements:
+
+Add student name
+Add student age
+Create a method to display information
+Create an object and display details
+
+Example:
+
+class Student:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print(self.name)
+        print(self.age)
+
+
+student1 = Student("Ahmed", 18)
+
+student1.display()
+Lesson Summary
+
+In this lesson, we learned:
+
+What OOP is
+Classes and objects
+Creating classes
+Creating objects
+__init__() method
+self keyword
+Class variables
+Object variables
+Creating methods
+Advantages of OOP
