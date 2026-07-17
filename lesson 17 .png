@@ -1,0 +1,248 @@
+# Python Course - Lesson 17: Functions in Python 🐍
+
+## What is a Function?
+
+A function is a block of reusable code that performs a specific task.
+
+Functions help us:
+- Reduce code repetition
+- Make programs easier to understand
+- Organize code better
+
+A function runs only when it is called.
+
+---
+
+## Creating a Function
+
+In Python, we create a function using the `def` keyword.
+
+### Syntax:
+
+```python
+def function_name():
+    code
+
+Example:
+
+def hello():
+    print("Hello Python")
+
+hello()
+
+Output:
+
+Hello Python
+Calling a Function
+
+To run a function, we need to call its name.
+
+Example:
+
+def welcome():
+    print("Welcome to Python")
+
+welcome()
+
+Output:
+
+Welcome to Python
+Function with Parameters
+
+Parameters allow us to pass information to a function.
+
+Example:
+
+def greeting(name):
+    print("Hello", name)
+
+greeting("Ali")
+
+Output:
+
+Hello Ali
+Multiple Parameters
+
+A function can have multiple parameters.
+
+Example:
+
+def student_info(name, age):
+    print("Name:", name)
+    print("Age:", age)
+
+student_info("Ahmed", 20)
+
+Output:
+
+Name: Ahmed
+Age: 20
+Default Parameters
+
+We can give a default value to a parameter.
+
+Example:
+
+def country(name="Pakistan"):
+    print("Country:", name)
+
+country()
+
+Output:
+
+Country: Pakistan
+Returning Values
+
+A function can return a value using the return keyword.
+
+Example:
+
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+
+print(result)
+
+Output:
+
+8
+Difference Between print() and return
+print()
+Displays output on the screen.
+Does not send value back.
+
+Example:
+
+def show():
+    print("Hello")
+
+show()
+return()
+Sends a value back from the function.
+The value can be stored and reused.
+
+Example:
+
+def multiply(a, b):
+    return a * b
+
+answer = multiply(4, 5)
+
+print(answer)
+
+Output:
+
+20
+Function with User Input
+
+Example:
+
+def square(number):
+    return number * number
+
+num = int(input("Enter a number: "))
+
+print(square(num))
+
+Output:
+
+Enter a number: 5
+25
+Local and Global Variables
+Local Variable
+
+A variable created inside a function is called a local variable.
+
+Example:
+
+def test():
+    x = 10
+    print(x)
+
+test()
+
+Output:
+
+10
+Global Variable
+
+A variable created outside a function is called a global variable.
+
+Example:
+
+x = 20
+
+def test():
+    print(x)
+
+test()
+
+Output:
+
+20
+Keyword Arguments
+
+We can pass arguments using parameter names.
+
+Example:
+
+def student(name, age):
+    print(name)
+    print(age)
+
+student(age=20, name="Ali")
+
+Output:
+
+Ali
+20
+Arbitrary Arguments (*args)
+
+When we don't know how many arguments will be passed, we use *args.
+
+Example:
+
+def names(*students):
+    print(students)
+
+names("Ali", "Ahmed", "Sara")
+
+Output:
+
+('Ali', 'Ahmed', 'Sara')
+Practice Example
+
+Create a function that calculates the area of a rectangle.
+
+Requirements:
+
+Take length and width as parameters
+Return the area
+Print the result
+
+Example:
+
+def area(length, width):
+    return length * width
+
+result = area(10, 5)
+
+print(result)
+
+Output:
+
+50
+Lesson Summary
+
+In this lesson, we learned:
+
+What functions are
+Creating and calling functions
+Parameters and arguments
+Multiple parameters
+Default parameters
+Returning values
+Local and global variables
+Keyword arguments
+*args
