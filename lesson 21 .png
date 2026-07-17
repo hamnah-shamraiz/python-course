@@ -1,0 +1,289 @@
+Python Course - Lesson 21: Polymorphism in Python 🐍
+What is Polymorphism?
+
+Polymorphism means "many forms".
+
+In programming, polymorphism allows the same method or function name to perform different tasks depending on the object.
+
+Example:
+
+A person can walk
+A bird can fly
+A fish can swim
+
+The same action can have different behaviors.
+
+Polymorphism with Functions
+
+A single function can work with different objects.
+
+Example:
+
+class Cat:
+
+    def sound(self):
+        print("Meow")
+
+
+class Dog:
+
+    def sound(self):
+        print("Bark")
+
+
+def make_sound(animal):
+    animal.sound()
+
+
+cat1 = Cat()
+dog1 = Dog()
+
+make_sound(cat1)
+make_sound(dog1)
+
+Output:
+
+Meow
+Bark
+
+The same function make_sound() works with different objects.
+
+Method Overriding (Runtime Polymorphism)
+
+When a child class changes the method of its parent class, it is called method overriding.
+
+Example:
+
+class Animal:
+
+    def speak(self):
+        print("Animal speaks")
+
+
+class Dog(Animal):
+
+    def speak(self):
+        print("Dog barks")
+
+
+animal1 = Animal()
+dog1 = Dog()
+
+animal1.speak()
+dog1.speak()
+
+Output:
+
+Animal speaks
+Dog barks
+
+The same method speak() gives different results.
+
+Polymorphism with Inheritance
+
+Example:
+
+class Shape:
+
+    def area(self):
+        print("Area of shape")
+
+
+class Circle(Shape):
+
+    def area(self):
+        print("Area of circle")
+
+
+class Square(Shape):
+
+    def area(self):
+        print("Area of square")
+
+
+circle1 = Circle()
+square1 = Square()
+
+circle1.area()
+square1.area()
+
+Output:
+
+Area of circle
+Area of square
+Built-in Polymorphism
+
+Python already has polymorphic functions.
+
+Example: len()
+
+print(len("Python"))
+
+print(len([1, 2, 3, 4]))
+
+Output:
+
+6
+4
+
+The same function works differently:
+
+String → counts characters
+List → counts items
+Operator Polymorphism
+
+Operators can work differently with different data types.
+
+Example:
+
+print(5 + 10)
+
+print("Hello " + "Python")
+
+Output:
+
+15
+Hello Python
+
+Here:
+
++ adds numbers
++ joins strings
+Duck Typing in Python
+
+Python follows a concept called Duck Typing.
+
+Meaning:
+
+"If an object behaves like something, Python accepts it."
+
+Example:
+
+class Bird:
+
+    def fly(self):
+        print("Bird can fly")
+
+
+class Airplane:
+
+    def fly(self):
+        print("Airplane can fly")
+
+
+def start_flying(obj):
+    obj.fly()
+
+
+bird1 = Bird()
+plane1 = Airplane()
+
+start_flying(bird1)
+start_flying(plane1)
+
+Output:
+
+Bird can fly
+Airplane can fly
+
+Both objects have a fly() method, so Python accepts them.
+
+Real-Life Example: Payment System
+class Payment:
+
+    def pay(self):
+        print("Payment method")
+
+
+class CreditCard(Payment):
+
+    def pay(self):
+        print("Paid using Credit Card")
+
+
+class Cash(Payment):
+
+    def pay(self):
+        print("Paid using Cash")
+
+
+payment1 = CreditCard()
+payment2 = Cash()
+
+payment1.pay()
+payment2.pay()
+
+Output:
+
+Paid using Credit Card
+Paid using Cash
+Advantages of Polymorphism
+Code Flexibility
+
+The same code can work with different objects.
+
+Easy Maintenance
+
+Adding new classes becomes easier.
+
+Code Reusability
+
+Less duplicate code is required.
+
+Better Design
+
+Programs become more organized.
+
+Practice Example
+
+Create:
+
+A parent class Animal
+Create two child classes:
+Dog
+Cat
+Both should have a method sound()
+Call both methods using objects
+
+Example:
+
+class Animal:
+
+    def sound(self):
+        pass
+
+
+class Dog(Animal):
+
+    def sound(self):
+        print("Woof")
+
+
+class Cat(Animal):
+
+    def sound(self):
+        print("Meow")
+
+
+dog1 = Dog()
+cat1 = Cat()
+
+dog1.sound()
+cat1.sound()
+
+Output:
+
+Woof
+Meow
+Lesson 21 Summary
+
+In this lesson, we learned:
+
+✅ Meaning of polymorphism
+✅ Same method with different behaviors
+✅ Method overriding
+✅ Polymorphism with inheritance
+✅ Built-in polymorphism
+✅ Operator polymorphism
+✅ Duck typing
+✅ Real-life examples
