@@ -1,0 +1,296 @@
+# Python Course - Lesson 16: Dictionaries in Python 🐍
+
+## What is a Dictionary?
+
+A dictionary is a collection of data stored in **key-value pairs**.
+
+Each item in a dictionary has:
+- A **key** (unique identifier)
+- A **value** (data associated with the key)
+
+Dictionaries are:
+- Ordered (in modern Python versions)
+- Changeable
+- Do not allow duplicate keys
+
+Dictionaries are created using curly brackets `{}`.
+
+Example:
+
+```python
+student = {
+    "name": "Ali",
+    "age": 20,
+    "course": "Python"
+}
+
+print(student)
+
+Output:
+
+{'name': 'Ali', 'age': 20, 'course': 'Python'}
+Creating a Dictionary
+
+Example:
+
+person = {
+    "name": "Ahmed",
+    "city": "Karachi",
+    "age": 25
+}
+
+print(person)
+
+Output:
+
+{'name': 'Ahmed', 'city': 'Karachi', 'age': 25}
+Accessing Dictionary Values
+
+We can access values using their keys.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+print(student["name"])
+
+Output:
+
+Ali
+Using get() Method
+
+The get() method is another way to access dictionary values.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+print(student.get("age"))
+
+Output:
+
+20
+Adding New Items to Dictionary
+
+We can add a new key-value pair.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+student["course"] = "Python"
+
+print(student)
+
+Output:
+
+{'name': 'Ali', 'age': 20, 'course': 'Python'}
+Changing Dictionary Values
+
+We can change the value of an existing key.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+student["age"] = 21
+
+print(student)
+
+Output:
+
+{'name': 'Ali', 'age': 21}
+Removing Items from Dictionary
+pop()
+
+The pop() method removes an item using its key.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20,
+    "course": "Python"
+}
+
+student.pop("age")
+
+print(student)
+
+Output:
+
+{'name': 'Ali', 'course': 'Python'}
+popitem()
+
+The popitem() method removes the last inserted item.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+student.popitem()
+
+print(student)
+
+Output:
+
+{'name': 'Ali'}
+Finding Dictionary Length
+
+The len() function returns the number of items in a dictionary.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20,
+    "course": "Python"
+}
+
+print(len(student))
+
+Output:
+
+3
+Looping Through a Dictionary
+
+We can use a for loop to access dictionary items.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20,
+    "course": "Python"
+}
+
+for key in student:
+    print(key)
+
+Output:
+
+name
+age
+course
+Accessing Keys and Values
+keys()
+
+The keys() method returns all keys.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+print(student.keys())
+
+Output:
+
+dict_keys(['name', 'age'])
+values()
+
+The values() method returns all values.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+print(student.values())
+
+Output:
+
+dict_values(['Ali', 20])
+items()
+
+The items() method returns key-value pairs.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+print(student.items())
+
+Output:
+
+dict_items([('name', 'Ali'), ('age', 20)])
+Checking Key Exists
+
+We can use the in keyword to check if a key exists.
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+
+if "name" in student:
+    print("Name exists")
+
+Output:
+
+Name exists
+Practice Example
+
+Create a dictionary that stores student information.
+
+The program should:
+
+Store student name
+Store age
+Store course name
+Update the course
+Print all information
+
+Example:
+
+student = {
+    "name": "Ali",
+    "age": 20,
+    "course": "Python"
+}
+
+student["course"] = "Web Development"
+
+print(student)
+Lesson Summary
+
+In this lesson, we learned:
+
+What dictionaries are
+Key-value pairs
+Creating dictionaries
+Accessing values
+Adding and changing items
+Removing items
+Looping through dictionaries
+Dictionary methods:
+get()
+keys()
+values()
+items()
+pop()
+popitem()
