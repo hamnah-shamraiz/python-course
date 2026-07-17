@@ -1,0 +1,338 @@
+# Python Course - Lesson 20: Inheritance in Python 🐍
+
+## What is Inheritance?
+
+Inheritance is an important concept of Object-Oriented Programming (OOP).
+
+Inheritance allows one class to use the properties and methods of another class.
+
+The existing class is called:
+- **Parent Class**
+- **Base Class**
+
+The new class is called:
+- **Child Class**
+- **Derived Class**
+
+Inheritance helps us:
+- Reuse code
+- Reduce repetition
+- Create organized programs
+
+---
+
+## Creating a Parent Class
+
+Example:
+
+```python
+class Animal:
+
+    def speak(self):
+        print("Animal makes a sound")
+Creating a Child Class
+
+A child class can inherit the properties and methods of a parent class.
+
+Example:
+
+class Animal:
+
+    def speak(self):
+        print("Animal makes a sound")
+
+
+class Dog(Animal):
+    pass
+
+
+dog1 = Dog()
+
+dog1.speak()
+
+Output:
+
+Animal makes a sound
+
+The Dog class inherited the speak() method from the Animal class.
+
+Using init() with Inheritance
+
+Example:
+
+class Person:
+
+    def __init__(self, name):
+        self.name = name
+
+
+class Student(Person):
+
+    def show(self):
+        print("Name:", self.name)
+
+
+student1 = Student("Ali")
+
+student1.show()
+
+Output:
+
+Name: Ali
+Using super() Function
+
+The super() function is used to call methods from the parent class.
+
+Example:
+
+class Person:
+
+    def __init__(self, name):
+        self.name = name
+
+
+class Student(Person):
+
+    def __init__(self, name, age):
+        super().__init__(name)
+        self.age = age
+
+
+student1 = Student("Ahmed", 20)
+
+print(student1.name)
+print(student1.age)
+
+Output:
+
+Ahmed
+20
+Types of Inheritance
+
+Python supports different types of inheritance:
+
+Single Inheritance
+Multiple Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+1. Single Inheritance
+
+One child class inherits from one parent class.
+
+Example:
+
+class Parent:
+
+    def show(self):
+        print("Parent class")
+
+
+class Child(Parent):
+    pass
+
+
+obj = Child()
+
+obj.show()
+
+Output:
+
+Parent class
+2. Multiple Inheritance
+
+One child class inherits from multiple parent classes.
+
+Example:
+
+class Father:
+
+    def father_method(self):
+        print("Father class")
+
+
+class Mother:
+
+    def mother_method(self):
+        print("Mother class")
+
+
+class Child(Father, Mother):
+    pass
+
+
+obj = Child()
+
+obj.father_method()
+obj.mother_method()
+
+Output:
+
+Father class
+Mother class
+3. Multilevel Inheritance
+
+A class inherits from another child class.
+
+Example:
+
+class Grandfather:
+
+    def show(self):
+        print("Grandfather class")
+
+
+class Father(Grandfather):
+    pass
+
+
+class Child(Father):
+    pass
+
+
+obj = Child()
+
+obj.show()
+
+Output:
+
+Grandfather class
+4. Hierarchical Inheritance
+
+Multiple child classes inherit from one parent class.
+
+Example:
+
+class Animal:
+
+    def sound(self):
+        print("Animal sound")
+
+
+class Dog(Animal):
+    pass
+
+
+class Cat(Animal):
+    pass
+
+
+dog = Dog()
+cat = Cat()
+
+dog.sound()
+cat.sound()
+
+Output:
+
+Animal sound
+Animal sound
+Method Overriding
+
+When a child class provides a different implementation of a parent method, it is called method overriding.
+
+Example:
+
+class Animal:
+
+    def sound(self):
+        print("Animal sound")
+
+
+class Dog(Animal):
+
+    def sound(self):
+        print("Bark")
+
+
+dog = Dog()
+
+dog.sound()
+
+Output:
+
+Bark
+Real-Life Example: Employee System
+
+Example:
+
+class Employee:
+
+    def __init__(self, name):
+        self.name = name
+
+
+class Developer(Employee):
+
+    def work(self):
+        print(self.name, "writes code")
+
+
+dev = Developer("Ali")
+
+dev.work()
+
+Output:
+
+Ali writes code
+Advantages of Inheritance
+Code Reusability
+
+We can use existing code again without rewriting it.
+
+Less Code
+
+Inheritance reduces duplicate code.
+
+Better Structure
+
+Programs become easier to organize.
+
+Easy Maintenance
+
+Changes in parent classes can affect child classes automatically.
+
+Practice Example
+
+Create a parent class Vehicle.
+
+Requirements:
+
+Add vehicle name
+Create a child class Car
+Add a method to display car information
+
+Example:
+
+class Vehicle:
+
+    def __init__(self, name):
+        self.name = name
+
+
+class Car(Vehicle):
+
+    def show(self):
+        print("Car:", self.name)
+
+
+car1 = Car("Toyota")
+
+car1.show()
+
+Output:
+
+Car: Toyota
+Lesson Summary
+
+In this lesson, we learned:
+
+What inheritance is
+Parent and child classes
+Using super()
+Types of inheritance:
+Single inheritance
+Multiple inheritance
+Multilevel inheritance
+Hierarchical inheritance
+Method overriding
+Advantages of inheritance
