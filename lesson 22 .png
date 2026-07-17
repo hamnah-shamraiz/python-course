@@ -1,0 +1,311 @@
+Python Course - Lesson 22: Encapsulation in Python 🐍
+What is Encapsulation?
+
+Encapsulation is an OOP concept that means wrapping data and methods together inside a class.
+
+It helps protect data from unwanted access and modification.
+
+In simple words:
+
+Encapsulation = Data hiding + Data protection
+
+Example:
+
+A bank account hides your balance.
+You cannot directly change the balance without using proper methods.
+Why Do We Need Encapsulation?
+
+Without encapsulation:
+
+class BankAccount:
+
+    balance = 5000
+
+
+account = BankAccount()
+
+account.balance = -10000
+
+print(account.balance)
+
+Output:
+
+-10000
+
+Anyone can change the balance, which is unsafe.
+
+Access Modifiers in Python
+
+Python has three types of access levels:
+
+Public
+Protected
+Private
+1. Public Members
+
+Public members can be accessed from anywhere.
+
+Example:
+
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+
+student1 = Student("Ali")
+
+print(student1.name)
+
+Output:
+
+Ali
+
+name is public because it has no special symbol.
+
+2. Protected Members
+
+Protected members are created using a single underscore _.
+
+They should be accessed inside the class or child classes.
+
+Example:
+
+class Student:
+
+    def __init__(self):
+        self._age = 20
+
+
+student1 = Student()
+
+print(student1._age)
+
+Output:
+
+20
+
+Python allows access, but _age means:
+
+"Please don't access this directly."
+
+3. Private Members
+
+Private members are created using double underscore __.
+
+They cannot be accessed directly from outside the class.
+
+Example:
+
+class BankAccount:
+
+    def __init__(self):
+        self.__balance = 5000
+
+
+account1 = BankAccount()
+
+print(account1.__balance)
+
+Output:
+
+AttributeError
+
+The data is hidden.
+
+Accessing Private Data Using Methods
+
+We can access private variables through methods.
+
+Example:
+
+class BankAccount:
+
+    def __init__(self):
+        self.__balance = 5000
+
+
+    def show_balance(self):
+        print(self.__balance)
+
+
+account1 = BankAccount()
+
+account1.show_balance()
+
+Output:
+
+5000
+Getter and Setter Methods
+
+Getter:
+
+Used to get private data.
+
+Setter:
+
+Used to update private data safely.
+
+Example:
+
+class Student:
+
+    def __init__(self, name):
+        self.__name = name
+
+
+    def get_name(self):
+        return self.__name
+
+
+    def set_name(self, name):
+        self.__name = name
+
+
+student1 = Student("Ali")
+
+print(student1.get_name())
+
+student1.set_name("Ahmed")
+
+print(student1.get_name())
+
+Output:
+
+Ali
+Ahmed
+Real-Life Example: ATM System
+class ATM:
+
+    def __init__(self):
+        self.__balance = 10000
+
+
+    def withdraw(self, amount):
+
+        if amount <= self.__balance:
+            self.__balance -= amount
+            print("Withdraw successful")
+
+        else:
+            print("Insufficient balance")
+
+
+    def show_balance(self):
+        print("Balance:", self.__balance)
+
+
+
+atm1 = ATM()
+
+atm1.withdraw(3000)
+
+atm1.show_balance()
+
+Output:
+
+Withdraw successful
+Balance: 7000
+
+The balance cannot be changed directly.
+
+Encapsulation Using Properties
+
+Python provides @property to create getter and setter methods easily.
+
+Example:
+
+class Person:
+
+    def __init__(self, age):
+        self.__age = age
+
+
+    @property
+    def age(self):
+        return self.__age
+
+
+    @age.setter
+    def age(self, value):
+        if value > 0:
+            self.__age = value
+
+
+person1 = Person(20)
+
+print(person1.age)
+
+person1.age = 25
+
+print(person1.age)
+
+Output:
+
+20
+25
+Advantages of Encapsulation
+Data Security
+
+Protects important information.
+
+Controlled Access
+
+Data can only be changed in allowed ways.
+
+Better Organization
+
+Keeps data and functions together.
+
+Easier Maintenance
+
+Changes can be made without affecting other code.
+
+Practice Example
+
+Create a class BankAccount.
+
+Requirements:
+
+Create private variable __balance
+Create method deposit()
+Create method withdraw()
+Create method show_balance()
+
+Example:
+
+class BankAccount:
+
+    def __init__(self):
+        self.__balance = 0
+
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+
+    def show_balance(self):
+        print(self.__balance)
+
+
+account1 = BankAccount()
+
+account1.deposit(5000)
+
+account1.show_balance()
+
+Output:
+
+5000
+Lesson 22 Summary
+
+In this lesson, we learned:
+
+✅ What encapsulation is
+✅ Data hiding
+✅ Public members
+✅ Protected members
+✅ Private members
+✅ Getter and setter methods
+✅ @property decorator
+✅ Real-life examples of encapsulation
